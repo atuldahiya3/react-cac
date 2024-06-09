@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import { useCallback } from 'react'
 import { useRef } from 'react'
 
@@ -64,7 +63,7 @@ function App() {
         type="checkbox" 
         id='numberInput' 
         defaultChecked={numberAllowed}
-        onChange={(e)=>{setNumberAllowed((prev)=>!prev)}}
+        onChange={()=>{setNumberAllowed((prev)=>!prev)}}
         >
         </input>
           <label htmlFor='numberInput'>Numbers</label>
@@ -73,7 +72,7 @@ function App() {
         type="checkbox" 
         id='characterInput' 
         defaultChecked={charAllowed}
-        onChange={(e)=>{setCharAllowed((prev)=>!prev)}}
+        onChange={()=>{setCharAllowed((prev)=>!prev)}}
         >
         </input>
           <label htmlFor='characterInput'>Characters</label>
